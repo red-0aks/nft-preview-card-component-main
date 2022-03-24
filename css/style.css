@@ -1,0 +1,135 @@
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* VARIABLES */
+:root{
+    /* PRIMARY COLORS */
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    
+    /* NEUTRAL COLORS */
+    --Very-dark-blue-main-bg: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-bg: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+
+    /* SHADOW */
+    --shadow:;
+}   
+/* GLOBAL */
+html{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--Very-dark-blue-main-bg);
+}
+/* MOBILE FIRST */
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    margin: 5%;
+    padding: 22px;
+    max-width: 348px;
+    max-height: 80%;
+    border-radius: 20px;
+    background-color: var(--Very-dark-blue-card-bg);
+}
+
+.img-view-hover{
+    display: none;
+}
+
+.nft-img{
+    width: 100%;
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.nft-title{
+    font-size: 24px;
+    margin: 20px 0;
+    font-weight: 700;
+}
+
+.nft-descrip{
+    color: var(--Soft-blue);
+    font-weight: 300;
+}
+
+.nft-info{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--Very-dark-blue-line);
+}
+
+.nft-info .icon-price, .icon-date{
+    max-width: 100%;
+    margin-right: 5px;
+}
+
+.nft-info li{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+
+.nft-info li:first-child{
+    color: var(--Cyan);
+}
+
+.nft-info li:last-child{
+    color: var(--Soft-blue);
+}
+
+.sec-creator{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.creator-avatar{
+    width: 40px;
+    max-width: 100%;
+    margin-right: 15px;
+    border-radius: 100%;
+    border: 1px solid white;
+}
+
+.creator-name{
+    color: var(--Soft-blue);
+}
+
+.creator-name span{
+    color: white;
+}
+
+
+
+/* ATTRIBUTION */
+.attribution { 
+    padding: 16px;
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { color: var(--Cyan); }
